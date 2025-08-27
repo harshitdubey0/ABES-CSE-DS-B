@@ -1,2 +1,2 @@
-This file is for tracking my everyday journey  .
+This file is for tracking my everyday journey  
 & also  for some motivation.
