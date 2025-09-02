@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Book Seat</title>
+</head>
+<body>
+  <!-- Top Bar -->
+  <table style="background-color: orange;" width="100%" border="1" cellspacing="0" cellpadding="6">
+    <tr>
+      <td width="60">  <img style="border-radius: 50%;" src="img.webp" alt="logo" height="150px" width="150px"></td>
+     <td ><h2 style="text-align: center;">   BUS book seat </h2></td>
+    </tr>
+  </table>
+
+  <h2 style="text-align:center; color: black;"> welcome to bus booking system </h2>
+  <hr />
+
+  <!-- Layout using a simple table (HTML only, no CSS) -->
+  <table width="100%" cellpadding="8">
+    <tr>
+      <!-- Left: Form fields -->
+      <td valign="top" width="65%">
+        <form>
+          <h3>User Detail</h3>
+
+          <p>
+            <label for="name">User name</label><br />
+            <input type="text" id="name" name="name" />
+          </p>
+
+          <p>
+            <label for="password">User password</label><br />
+            <input type="password" id="password" name="password" />
+          </p>
+
+          <p>
+            <label>User Gender</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </p>
+
+          <p>
+            <label for="city">User Select CITY</label><br />
+            <select id="city" name="city">
+              <option value="">-- select one --</option>
+              <option>Delhi</option>
+              <option>Mumbai</option>
+              <option>Bengaluru</option>
+              <option>Hyderabad</option>
+              <option>Pune</option>
+              <option>Chennai</option>
+              <option>Kolkata</option>
+            </select>
+          </p>
+
+          <p>
+            <button type="submit">Book Seat</button>
+          </p>
+        </form>
+      </td>
+
+      <!-- Right: Bus image placeholder -->
+      <td valign="top" align="center" width="35%">
+        <table border="1" cellpadding="16" cellspacing="0">
+          <tr>
+            <td align="center" width="220" height="160">
+              <img style="border-radius: 50%;" src="img.webp" alt="logo" height="200px" width="200px">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
