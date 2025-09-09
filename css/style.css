@@ -1,0 +1,64 @@
+#text{
+    color: blue;
+    font-size: 20px;
+}
+#changeTextButton{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#colorBox{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin-top: 10px;
+    padding: 10px;
+    border : 2px solid black;
+}
+.card-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  border : 2px solid rgb(216, 20, 118);
+  padding: 10px;
+  border-radius: 8px;
+  max-width: fit-content;
+  background-color: #f9f9f9;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  width: 180px;
+}
+
+.card img {
+  width: 8px;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #333;
+  margin: 12px 0;
+}
+
+.buy-btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.buy-btn:hover {
+  background: #0056b3;
+}
