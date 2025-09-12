@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Style Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f3f6;
+    }
+
+    /* Navbar container */
+    .navbar {
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-top img {
+      height: 40px;
+    }
+
+    .navbar-search {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .navbar-search input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .navbar-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    /* Categories row (two-row layout) */
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 40px;
+    }
+
+    .category {
+      text-align: center;
+      width: 100px;
+    }
+
+    .category img {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: auto;
+    }
+
+    .category span {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-top">
+      <img src="img.svg" alt="Flipkart Logo">
+      
+      <div class="navbar-search">
+        <input type="text" placeholder="Search for Products, Brands and More">
+      </div>
+      
+      <div class="navbar-links">
+        <span>Login</span>
+        <span>Cart</span>
+        <span>Become a Seller</span>
+      </div>
+    </div>
+
+    <!-- Categories (two rows possible) -->
+    <div class="categories">
+      <div class="category">
+        <img src="minute.webp" alt="Minutes">
+        <span>Minutes</span>
+      </div>
+      <div class="category">
+        <img src="phone.webp" alt="Mobiles">
+        <span>Mobiles & Tablets</span>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" alt="Fashion">
+        <span>Fashion</span>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920107.png" alt="Electronics">
+        <span>Electronics</span>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" alt="Home">
+        <span>Home & Furniture</span>
+      </div>
+      <div class="category">
+        <img src="tv.webp" alt="TV">
+        <span>TVs & Appliances</span>
+      </div>
+      <div class="category">
+        <img src="flight.webp" alt="Flights">
+        <span>Flight Bookings</span>
+      </div>
+      <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/2948/2948035.png" alt="Beauty">
+        <span>Beauty, Food</span>
+      </div>
+      <div class="category">
+        <img src="grocery.webp" alt="Grocery">
+        <span>Grocery</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
