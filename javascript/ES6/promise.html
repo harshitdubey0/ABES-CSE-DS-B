@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+   
+
+</head>
+<body>
+    
+  <script>
+    const mypromise = new Promise((resolve, reject) => {
+      const password ="harshit@123";
+      if(password.length >8){
+        resolve("Password length is ok");
+      }
+        else{
+            reject("Password length is shorter");
+        }
+    });
+    mypromise.then((msg)=>{
+        console.log( msg);
+    })
+    mypromise.catch((err)=>{
+        console.log( err);
+    })
+  </script>
+</body>
+</html>
