@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <script>
+
+       const Library = { 
+    Libraryname : "ABES Library",
+    Librarylocation : "Ghaziabad" ,
+    Librarycollection : [
+        { title: "C++", author: "Bjarne Stroustrup" },
+        { title: "Java", author: "James Gosling" },
+        { title: "Python", author: "Guido van Rossum" },
+        { title: "JavaScript", author: "Brendan Eich" },
+        { title: "PHP", author: "Rasmus Lerdorf" }
+    ]
+};
+let oneBook = Library.Librarycollection[3] ;
+let twobook = Library.Librarycollection[1] ;
+
+document.write("Book: " + oneBook.title + "<br>Author: " + oneBook.author);
+
+document.write("<br><br>Book: " + twobook.title + "<br>Author: " + twobook.author);
+
+// const college ={ 
+// collegename : "ABES Engineering college",
+// collegecode : 32,
+// collegelocation : "Ghaziabad"
+//     }
+//     const student ={
+//         studentname :"Harshit",
+//         studentrollno : 0091,
+//         collegelocation : "Ghaziabad"
+//     }
+
+//     const y ={...college,...student}
+//     document.write(y);
+        // const a1 = [1,2,3,4];
+        // const a2 = [6,8,9,11];
+        // const r =[...a1,...a2];
+        // document.write(r);
+    </script>
+    
+</body>
+</html>
