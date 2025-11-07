@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import hello,{num_set,Greetings} from "./export.js";
+        console.log(num_set);
+
+        hello();
+        let g=new Greetings("Aakash");
+        console.log(g.greetings);
+    </script>
+</body>
+</html>
