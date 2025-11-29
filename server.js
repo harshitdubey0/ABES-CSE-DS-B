@@ -29,10 +29,28 @@ app.get('/:id', (req, res) => {
     
     if(!student){
         return res.status(404).json({ message: "student not found" });
-        
+
 
     }
-}
+    res.status(200).json({ message: "student found", student  });
+    } catch (error) {
+        res.message(500).json({ message: "error in fetching student", error: error.message });
+    }
+});
+
+// create student 
+app.post('/add ', (req, res) => {
+    try {
+         const new student ={
+            id: students.length + 1,
+            ...req.body
+            };
+
+            
+         }
+    }
+
+
 
 
 app.listen(port, () => {
