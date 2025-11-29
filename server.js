@@ -27,7 +27,7 @@ app.get('/:id', (req, res) => {
 
     const student = students.find( s=> s.id ); 
     
-    if(!student){
+    if(student == -1){
         return res.status(404).json({ message: "student not found" });
 
 
@@ -45,11 +45,51 @@ app.post('/add ', (req, res) => {
             id: students.length + 1,
             ...req.body
             };
+            students.push(new student);
+            res.status(201).json({ message: "student added successfully", new student  });  
+    } catch (error) {
+        res.status(500).json({ message: "data not save", error: error.message });
 
-            
-         }
+
+
+
+
+         
     }
+})
 
+// edit data
+app.put('/edit/:id', (req, res) => {
+    try {
+        const id = req.params.id;
+        const studentIndex = students.findIndex( s => s.id == id );
+        if(studentIndex === -1){
+            return res.status(404).json({ message: "student not found" });
+        }
+        students[studentIndex] = {
+            ...students[studentIndex],
+            ...req.body
+        };
+        res.status(200).json({ message: "student data  succesfully updated", student: students[studentIndex] });
+    }
+        catch (error) {
+        res.status(500).json({ message: "error in updating student", error: error.message });
+    }
+});
+
+// delete data
+app.delete('/delete/:id', (req, res) => {
+    try {
+        const id = req.params.id;
+        const studentIndex = students.findIndex( s => s.id == id );
+        if(studentIndex === -1){
+            return res.status(404).json({ message: "student not found" });
+        }
+        students.splice(studentIndex, 1);
+        res.status(200).json({ message: "student deleted successfully" });
+    } catch (error) {
+        res.status(500).json({ message: "error in deleting student", error: error.message });
+    }   
 
 
 
