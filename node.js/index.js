@@ -46,4 +46,24 @@ const fs = require('fs');
 // fs.appendFileSync("./abes.txt", `Data science`);
 
 // write using asynchronous method
-fs.appendFile("./ds-b.txt", `Data science` ,()=>{});
+// fs.appendFile("./ds-b.txt", `Data science` ,()=>{});
+
+
+
+
+
+// copy file using synchronous method
+ // fs.cpSync("./abes.txt","./A1.txt");
+
+
+// copy file using asynchronous method
+ fs.cp("./abes.txt","./A2.txt",(err,result)=>{
+    if(err){
+        console.log("Error", err);
+    }
+    else {
+       
+        console.log(result);
+        
+    }
+ });
