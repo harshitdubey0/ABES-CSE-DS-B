@@ -13,22 +13,22 @@ const fs = require('fs');
 
 
 // read using asynchronous method
-fs.readFile("./A1.txt","utf-8",(err,result)=>{
-    if(err){
-        console.log("Error", err);
-    }
-    else{
-        console.log(result);
-    }
-});
-fs.readFile("./A2.txt","utf-8",(err,result)=>{
-    if(err){
-        console.log("Error", err);
-    }
-    else{
-        console.log(result);
-    }
-});
+// fs.readFile("./A1.txt","utf-8",(err,result)=>{
+//     if(err){
+//         console.log("Error", err);
+//     }
+//     else{
+//         console.log(result);
+//     }
+// });
+// fs.readFile("./A2.txt","utf-8",(err,result)=>{
+//     if(err){
+//         console.log("Error", err);
+//     }
+//     else{
+//         console.log(result);
+//     }
+// });
 
  //fs.writeFileSync("./abes.txt", "Hello Harshit from ABES COLLEGE OF ENGINEERING");
 
@@ -42,3 +42,8 @@ fs.readFile("./A2.txt","utf-8",(err,result)=>{
 //     }
 //  });
  
+// write using synchronous method
+// fs.appendFileSync("./abes.txt", `Data science`);
+
+// write using asynchronous method
+fs.appendFile("./ds-b.txt", `Data science` ,()=>{});
