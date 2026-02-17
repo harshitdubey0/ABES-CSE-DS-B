@@ -57,13 +57,27 @@ const fs = require('fs');
 
 
 // copy file using asynchronous method
- fs.cp("./abes.txt","./A2.txt",(err,result)=>{
-    if(err){
-        console.log("Error", err);
-    }
-    else {
+//  fs.cp("./abes.txt","./A2.txt",(err,result)=>{
+//     if(err){
+//         console.log("Error", err);
+//     }
+//     else {
        
-        console.log(result);
+//         console.log(result);
         
-    }
- });
+//     }
+//  });
+
+ // delete file using asynchronous method
+fs.unlink("./A2.txt", (err) => {
+  if (err) {
+    console.log("Error deleting file ", err);
+  } else {
+    console.log("File deleted successfully ");
+  }
+});
+
+
+
+// delete file using synchronous method
+fs.unlinkSync("./A1.txt");
