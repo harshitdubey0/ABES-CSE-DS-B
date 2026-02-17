@@ -1,5 +1,7 @@
 
-const fs = require('fs');
+
+//{
+// const fs = require('fs');
 
 // Function to write a file asynchronously
 
@@ -69,15 +71,33 @@ const fs = require('fs');
 //  });
 
  // delete file using asynchronous method
-fs.unlink("./A2.txt", (err) => {
-  if (err) {
-    console.log("Error deleting file ", err);
-  } else {
-    console.log("File deleted successfully ");
-  }
-});
+// fs.unlink("./A2.txt", (err) => {
+//   if (err) {
+//     console.log("Error deleting file ", err);
+//   } else {
+//     console.log("File deleted successfully ");
+//   }
+// });
 
 
 
 // delete file using synchronous method
-fs.unlinkSync("./A1.txt");
+// fs.unlinkSync("./A1.txt");
+
+
+
+
+
+//}
+
+
+
+const os = require('os');
+console.log("system platform",os.platform());
+console.log("user info",os.userInfo());
+console.log("cpu",os.arch());
+console.log("free memory",os.freemem());
+console.log("total memeory",os.totalmem());
+console.log("uptime",os.uptime());
+console.log("homedir",os.homedir());
+console.log("host name",os.hostname());
